@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: 'Glory', sans-serif;;
+    font-family: 'Glory', sans-serif;
     color: #135561;
     background: #d9f3f7;
     box-sizing: border-box;
@@ -127,17 +127,12 @@ ul {
     background: #80eae5;
     flex-direction: column;
     min-width: 410px;
+    overflow:hidden;
 }
 
 .photo {
-    height: 13rem;
+    height: 300px;
     object-fit: scale-down;
-}
-
-.photo:hover {
-	z-index: 10;
-	transition: 1s;
-    transform: scale(1.5);
 }
 
 .myname {
@@ -155,18 +150,21 @@ ul {
     animation: move 4s ease-in-out infinite;
 }
 
+.myname span:hover {
+    cursor: default;
+}
+
 @keyframes move {
     0% {
-        transform: translate(-40%, 0);
+        transform: translate(0%, 0);
     }
     50% {
         text-shadow: 0 25px 50px;
     }
-    100% {
-        transform: translate(40%, 0);
+    70% {
+        transform: translate(30%, 0);
     }
 }
-
 
 .contacts-container {
     margin-top: 36px;
@@ -213,6 +211,8 @@ ul {
     background-color: #43d4f5;
 }
 
+
+
 /*FOOTER*/
 
 footer {
@@ -252,3 +252,23 @@ footer img:hover {
     letter-spacing: 2px;
     color: #FFFFFF;
 }	
+
+.header_link {
+    font-family: 'Glory', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 40%;
+    padding: 10px 15px;
+    transition: 0.5s ease color;
+}
+
+.header_link:hover {
+    background-color:#FFFFFF;
+    opacity: 0.8;
+    box-shadow: 3px 5px #135561;
+    color: #135561;
+    transition: 0.5s ease color;
+}
