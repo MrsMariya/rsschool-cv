@@ -16,7 +16,7 @@
 <body>
     <div class="wrapper">
     <main>
-    <header class="header">
+    <header class="header" id="head">
          <div class="container">
             <div class="header-container">
                 
@@ -50,7 +50,7 @@
 
     <aside class="photo-info">
         <div class="photo-container">
-            <img class="photo" src="w02kywLX40s.jpg"  width="370" height="370" alt="MyPhoto"/>
+            <img class="photo" src="assets/w02kywLX40s.jpg"  width="370" height="370" alt="MyPhoto"/>
         </div>
         <div class="name">
             <div class="myname name1" >
@@ -84,7 +84,7 @@
         </ul>
       </div>
     </aside>
-    <section class="main-content">
+    <div class="main-content">
         <section class="about_me" id="about">
           <h3 class="section-title">About me:</h3>
           <p>I love life) At the moment i am studying the basics of front-end development.</p>
@@ -126,26 +126,28 @@
        <section class="languages" id="languages">
         <h3 class="section-title">Languages:</h3>
         <ul>
-            <li>A2 (pre-intermediate)</li>
+            <li>English (pre-intermediate)</li>
             <li>Russian\Belarusian - native</li>
         </ul>
        </section>
-    </section>
-
+    </div>
+   <!-- <button id="btnScroll" class="btn btn_top" type="button" title="Go to top" style="display: block;">Top</button>-->
     <footer class="footer">
         <div class="container">
             <div class="footer-container">
         <span class="link">
-            <a href="https://rs.school/js/"><img class="img_link" src="rs_school_js.svg" width="60" height="60" alt="RS-logo"></a>
+            <a href="https://rs.school/js/"><img class="img_link" src="assets/rs_school_js.svg" width="60" height="60" alt="RS-logo"></a>
             </span>
             <p><time>2021</time></p>
         <span class="link">
-            <a href="https://github.com/MrsMariya"><img class="img_link" src="GitHub-Mark-64px.png" width="64" height="64" alt="github link"></a>
+            <a href="https://github.com/MrsMariya"><img class="img_link" src="assets/github.svg" width="64" height="64" alt="github link"></a>
             </span>
+            <a href="#head" class="header_link">Top</a>
     </div>
 </div>
 </footer>
 </main>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
