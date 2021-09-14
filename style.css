@@ -17,6 +17,7 @@ body {
     box-sizing: border-box;
     margin: 0 auto;
     font-size: 20px;
+    overflow-x: hidden;
 }
 
 main {
@@ -33,7 +34,6 @@ section {
 }
 
 .wrapper {
-    max-width: 1300px;
     margin: 0 auto;
   }
 
@@ -42,9 +42,8 @@ section {
     align-items: center;
     text-align: center;
     margin: 0 auto;
-    max-width: 1280px;
     flex-wrap: wrap;
-    overflow-x: hidden;;
+    overflow-x: hidden;
 }
 
 @media (max-width:1300px){
@@ -74,15 +73,15 @@ ul {
 header {
     width: 100%; 
     grid-column: 2/4;
+    min-height: 40px;
 }
 
 .header {
     display: flex;
     align-items: center;
     flex-direction:row;
-    justify-content:right;
+    justify-content:flex-end;
     background: #43d4f5;
-    width: 100%;
     min-height: 40px;  
 }
 
@@ -92,6 +91,7 @@ nav {
 
 .burger-menu {
     position: relative;
+    width: 100%;
 }
 
 .menu-btn {
@@ -99,7 +99,7 @@ nav {
     align-items: center;
     position:absolute;
     top: 0;
-    right:0;
+    right: 10px;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -129,9 +129,9 @@ nav {
     display: block;
     position: fixed;
     visibility: hidden;
-    top: -600px;
-    width: 150px;
-    height: 600px;
+    top: -400px;
+    height: 400px;
+    right: 0;
     margin: 0;
     list-style: none;
     background-color: #80eae5;
@@ -152,8 +152,14 @@ nav {
     transition-duration: .25s;
     z-index: 1;
   }
+
   .menu-item:hover {
     background-color: #80eae5;
+    color: #FFFFFF;
+  }
+
+  .menu-tog {
+      width: 100%;
   }
    
   #menu-toggle{
@@ -162,18 +168,22 @@ nav {
    
   #menu-toggle:checked ~ .menu-btn > span{
     transform: rotate(45deg);
+    right: 0;
   }
   #menu-toggle:checked ~ .menu-btn > span::before{
     top: 0;
+    right: 0;
     transform: rotate(0);
   }
   #menu-toggle:checked ~ .menu-btn > span::after{
     top: 0;
+    right: 0;
     transform: rotate(90deg);
   }
   #menu-toggle:checked ~ .menubox{
     visibility: visible;
     top: 0;
+    right: 0;
   }
 
 /*MAIN*/
