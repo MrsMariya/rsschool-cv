@@ -65,16 +65,24 @@ section {
     }
 }
 
-
 ul {
     line-height: 30px;
     padding-left: 20px;
 }
 
 /*HEADER*/
-.header {
-    background: #43d4f5;
+header {
     width: 100%; 
+    grid-column: 2/4;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    justify-content:right;
+    background: #43d4f5;
+    width: 100%;
     min-height: 40px;  
 }
 
@@ -121,11 +129,10 @@ nav {
     display: block;
     position: fixed;
     visibility: hidden;
-    right: -150px;
+    top: -600px;
     width: 150px;
     height: 600px;
     margin: 0;
-    padding: 40px 0;
     list-style: none;
     background-color: #80eae5;
     box-shadow: 2px 0px 6px #000 ;
@@ -135,6 +142,7 @@ nav {
    
   .menu-item {
     display: block;
+    overflow: hidden;
     padding: 12px 24px;
     color: #135561;
     font-family: 'Glory', sans-serif;
@@ -165,7 +173,7 @@ nav {
   }
   #menu-toggle:checked ~ .menubox{
     visibility: visible;
-    right: 0;
+    top: 0;
   }
 
 /*MAIN*/
@@ -178,6 +186,7 @@ nav {
     flex-direction: column;
     justify-content: stretch;
     grid-row: 1/4;
+    position: sticky;
     background: #80eae5;
     flex-direction: column;
     min-width: 410px;
@@ -222,8 +231,8 @@ nav {
 
 .contacts-container {
     margin-top: 36px;
-    margin-left: 50px;
-    font-size: 24px;
+    margin-left: 10px;
+    font-size: 21px;
     font-weight: 600;
     line-height: 50px;
     letter-spacing: 2px;
@@ -231,8 +240,35 @@ nav {
     transition: .5s ease color;
 }
 
-.contacts-container h3 {
+.contacts-container h2 {
+    margin-left: 25px;
     text-decoration: underline;
+    font-size: 32px;
+}
+
+.contacts-inf {
+    list-style-type: none;
+}
+
+.contact-block {
+    display: flex;
+    align-items: center;
+    margin: 10px 10px;
+    justify-content: left;
+}
+
+.contact_link {
+    list-style-type: none;
+    line-height: 35px;
+    color: #135561;
+    padding-left: 10px;
+}
+
+.contact-img {
+    justify-content: space-between;
+    align-items: center;
+    width: 25px;
+    height: 25px;
 }
 
 /*main-content*/
