@@ -97,7 +97,8 @@ ul {
 }
 
 .nav-item {
-    margin-left: 40px;
+    margin-left: 25px;
+    
 }
 
 .nav-link {
@@ -111,7 +112,7 @@ ul {
 }
 
 .nav-link:hover {
-    color:#070083  ;
+    color:#135561  ;
 }
 
 /*MAIN*/
