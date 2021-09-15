@@ -34,7 +34,7 @@ section {
 }
 
 .wrapper {
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
   }
 
@@ -310,14 +310,14 @@ footer img:hover {
 }
 
 
-@media (min-width:1440px){
+@media (max-width:1440px){
     .wrapper{
     width: 1280px;
     margin: 0 auto;
     }
 }
 
-@media (min-width:1024px){
+@media (max-width:1024px){
     .wrapper{
     width: 970px;
     font-size: 18px;
