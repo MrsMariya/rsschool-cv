@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>CV</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <main>
+  <main>
     <header class="header" id="head">
               <nav class="burger-menu">
                 <input class="menu-tog" id="menu-toggle" type="checkbox">
@@ -30,7 +30,7 @@
                           <a href="#skills" class="menu-item">Skills</a>
                       </li>
                       <li class="nav-item">
-                          <a href="#objectiv" class="menu-item">Objectiv</a>
+                          <a href="#objective" class="menu-item">Objective</a>
                       </li>
                       <li class="nav-item">
                           <a href="#education" class="menu-item">Education</a>
@@ -74,7 +74,7 @@
                 <span>K</span>
             </div>
           </div>
-        <div class="contacts-container">
+        <section class="contacts-container">
           <h2 class="contacts-header">Contacts:</h2>
         <ul class="contacts-inf">
           <li class="contact-block">
@@ -92,12 +92,12 @@
           <li class="contact-block"><img class="contact-img" src="./assets/discord_icon_136688.svg" width="24" height="24" alt="discord link">
              (@MrsMariya)#5663</li>
         </ul>
-      </div>
+      </section>
     </aside>
     <div class="main-content">
         <section class="about_me" id="about">
           <h3 class="section-title">About me:</h3>
-          <p>I love life) At the moment i am studying the basics of front-end development.</p>
+          <p>I love life). Some months ago, I decided to change my field of activity. <br> Therefore, I am studying at RS-School now.</p>
         </section>
         <section class="skills" id="skills">
           <h3 class="section-title">Skills:</h3>
@@ -109,8 +109,8 @@
             <li>Figma</li>
           </ul>
         </section>
-        <section class="objectiv" id="objectiv">
-            <h3 class="section-title">Objectiv:</h3>
+        <section class="objective" id="objective">
+            <h3 class="section-title">Objective:</h3>
             <p>I want to learn the skills of a front-end developer and to get the Frontend-job next year.</p>
         </section>
         <section class="education" id="education">
@@ -125,22 +125,26 @@
        </section>
        <section class="code_example" id="code_example">
         <h3 class="section-title">Code example:</h3>
-        <pre><code class="html">function explode(s) {<br>
+          <pre><code class="html">function explode(s) {<br>
             let str ='';<br>
             for (let i = 0; i &lt; s.length; i++){<br>
                str +=s[i].repeat(s[i]);<br>
             }<br>
             return str;<br>
-          };</code></pre>
+          };</code>
+        </pre>
        </section>
        <section class="work_examples" id="work_examples">
         <h3 class="section-title">Work examples:</h3>
         <ul>
           <li>
-            <a href="https://rolling-scopes-school.github.io/mrsmariya-JSFEPRESCHOOL/vertical-slider/">Slider</a>
+            <h4>Slider(HTML, CSS, JS)</h4>
+            <a href="https://rolling-scopes-school.github.io/mrsmariya-JSFEPRESCHOOL/vertical-slider/"><img class="img_link" src="./assets/slider.png" width="1157" height="615" alt="project-slider"></a>
           </li>
           <li>
-            <a href="https://rolling-scopes-school.github.io/mrsmariya-JSFEPRESCHOOL/custom-video-player/">Video player</a>
+            <h4>Video player(HTML, CSS, JS)</h4>
+            <p>I haven't finished this project yet</p>
+            <a href="https://rolling-scopes-school.github.io/mrsmariya-JSFEPRESCHOOL/custom-video-player/"><img class="img_link" src="./assets/Player.png" width="1157" height="629" alt="project-player"></a>
           </li>
         </ul>
        </section>
@@ -154,20 +158,16 @@
     </div>
    <!-- <button id="btnScroll" class="btn btn_top" type="button" title="Go to top" style="display: block;">Top</button>-->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-container">
-        <span class="link">
-            <a href="https://rs.school/js/"><img class="img_link" src="assets/rs_school_js.svg" width="60" height="60" alt="RS-logo"></a>
-            </span>
-            <p><time>2021</time></p>
-        <span class="link">
-            <a href="https://github.com/MrsMariya"><img class="img_link" src="assets/github.svg" width="64" height="64" alt="github link"></a>
-            </span>
-            <a href="#head" class="header_link">Top</a>
-    </div>
-</div>
-</footer>
-</main>
+      <div class="footer-container">
+         <a href="https://rs.school/js/"><img class="img_link" src="assets/rs_school_js.svg" width="60" height="60" alt="RS-logo"></a>
+            <p>
+              <time>2021</time>
+            </p>
+         <a href="https://github.com/MrsMariya"><img class="img_link" src="assets/github.svg" width="64" height="64" alt="github link"></a>
+         <a href="#head" class="header_link">Top</a>
+      </div>
+    </footer>
+ </main>
 </div>
 <script src="script.js"></script>
 </body>
