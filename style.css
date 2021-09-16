@@ -354,7 +354,7 @@ footer img:hover {
     .menu-btn {
         display: flex;
         align-items: center;
-        position: fixed;
+        position: absolute;
         top: 0;
         right: 10px;
         width: 26px;
@@ -384,7 +384,7 @@ footer img:hover {
        
       .menubox{
         display: block;
-        position: fixed;
+        position: absolute;
         visibility: hidden;
         top: -500px;
         height: 500px;
