@@ -330,18 +330,6 @@ footer img:hover {
         padding: 2px;
         min-width: 310px;
     }
-    .nav-item {
-        margin: 0 auto;
-    }
-}
-
-/*576-767.98*/
-@media (max-width: 768px) {
-    .wrapper {
-       max-width: 760px;
-        margin: 0;
-        }
-
     nav {
         position: relative;
     }
@@ -445,6 +433,14 @@ footer img:hover {
     right: 0;
     }
 
+}
+
+/*576-767.98*/
+@media (max-width: 768px) {
+    .wrapper {
+       max-width: 760px;
+        margin: 0;
+        }
     
 .footer-container {
     margin: 5px;
