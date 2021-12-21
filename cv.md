@@ -5,12 +5,13 @@
 * phone number: +375447561428
 * discord: MrsMariya(MrsMariya)#5663
 ### About me : ###
-_I love life) At the moment i am studying the basics of front-end development._
+_I love life). Some months ago, I decided to change my field of activity.Therefore, I am studying at RS-School now._
 ### Tech skills: ###
 * HTML/CSS
 * JavaScript
 * Git/Github
 * Figma
+* Webpack
 ### Objective: ###
 _I want to learn the skills of a front-end developer and to get the Frontend-job next year._
 ### Education: ###
@@ -22,9 +23,13 @@ _In July 2021, I started learning the basics of programming._
 * Youtube courses and video (Sergey Nemchinskiy,Vladilen Minin,Anna Blok)
 ### Code example: ###
 ```
-function changeVideo(url){
-  video_thumb.src = url;
-};
+function explode(s) {
+            let str ='';
+            for (let i = 0; i < s.length; i++){
+               str +=s[i].repeat(s[i]);
+            }
+            return str;
+          };
 ```
 ### English level: ###
 _A2 (pre-intermediate)_
