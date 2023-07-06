@@ -10,7 +10,8 @@ h6 {
 
 ul,
 li {
-    list-style: none;
+    list-style-type: none;
+	padding: 0;
 }
 
 html,
@@ -24,7 +25,8 @@ body {
 	scroll-behavior: smooth;
 	--color1: #135561;
 	--color2: #d9f3f7;
-	--colorWhite: #43d4f5;
+	--color3: #43d4f5;
+	--color4: #80eae5;
 }
 
 .wrapper {
@@ -46,7 +48,7 @@ header {
 }
 
 .header {
-    background: var(--colorWhite);
+    background: var(--color3);
     min-height: 40px;  
 }
 
@@ -62,10 +64,102 @@ header {
 .menu-item {
 	text-decoration: none;
 	letter-spacing: 1px;
-    color: var(--color3);
+    color: var(--color1);
     transition: .5s ease color;
 }
 
 .menu-item:hover {
     color: var(--color2);
+}
+
+/*main*/
+main {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: 0 auto;
+}
+
+/*aside*/
+.photo-info {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: stretch;
+    grid-row: 1/4;
+    position: sticky;
+    background: var(--color4);
+    flex-direction: column;
+    min-width: 350px;
+    overflow:hidden;
+	text-align: center;
+}
+
+.photo {
+    height: 300px;
+    object-fit: scale-down;
+	padding: 20px;
+}
+
+.myname {
+    padding: 25px 0;
+    color: var(--color1);
+    font-size: 0;
+    line-height: 0.5;
+}
+
+.my-name span {
+    font-size: 30px;
+    font-weight: 800;
+    display: inline-block;
+    animation: move 4s ease-in-out infinite;
+}
+
+.my-name span:hover {
+    cursor: default;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0%, 0);
+    }
+    50% {
+        text-shadow: 0 25px 50px;
+    }
+    70% {
+        transform: translate(30%, 0);
+    }
+}
+
+.contacts {
+    margin-top: 36px;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 2px;
+    color: var(--color1);
+    transition: .5s ease color;
+}
+
+.contact-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_link {
+    list-style-type: none;
+    line-height: 35px;
+    color: #135561;
+    padding: 15px 5px;
+    transition: .3s;
+	text-decoration: none;
+}
+
+.contact-img {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 25px;
+    height: 25px;
 }
