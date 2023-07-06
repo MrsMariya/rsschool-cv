@@ -3,11 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet&display=swap" rel="stylesheet">
+    <title>My CV</title>
 </head>
 <body>
-    <header>
-        <h2>Mariya Pastushonak</h2>
-    </header>
+    <div class="wrapper">
+        <header>
+            <h2>Mariya Pastushonak</h2>
+        </header>
+        <aside class="photo-info">
+            <img class="photo" src="assets/img/302580549_5393918440734186_4991215692029156793_n.jpg"  width="370" height="370" alt="MyPhoto">
+        </aside>
+        <main>
+            <section class="about">
+                <h3>About me:</h3>
+                <p>I love life, so always try to treat any life situations in a positive way.</p>
+            </section>
+            <section class="skills">
+                <h3>Skills:</h3>
+                <p> JavaScript, HTML, CSS (SCSS), Git, Figma</p>
+            </section>
+            <section class="objectiv">
+                <h3>Objective:</h3>
+                <p>Learn the skills of a front-end developer</p>
+            </section>
+            <section class="education">
+                <h3>Education:</h3>
+                <ul>
+                    <li>The Rolling Scopes School</li>
+                    <li>HTML Academy</li>
+                    <li>Hexlet</li>
+                    <li>Sololearn courses: HTML, CSS, JavaScript</li>
+                    <li>Mogilev State A. Kuleshov university, Faculty of Economics and Law (2006-2011)</li>
+                </ul>
+            </section>
+            <section class="languages">
+                <h3>Languages:</h3>
+                <ul>
+                    <li>A2 (pre-intermediate)</li>
+                    <li>Russian\Belarusian - native</li>
+                </ul>
+            </section>
+            <section class="sample_code">
+                <h3>Sample code</h3>
+                <div>
+                  <pre> 
+                    <code>
+                        function mergeArrays(arr1, arr2) {
+                            return  [...new Set([...arr1,...arr2])]
+                            .sort((a, b) => a - b)
+                          }
+                    </code>
+                  </pre>
+                </div>
+              </section>
+              <section class="experience">
+                <h3>Experience</h3>
+                <ul>
+                    <li>Experience working with HTML and CSS</li>
+                    <li>Experience working with javaScript</li>
+                    <li>Experience in solution algorithmic tasks</li>
+                </ul>
+              </section>
+              <section class="work_examples">
+                <h3>Work examples:</h3>
+                <ul>
+                  <li>
+                    <h4>Momentum(HTML, CSS, JS)</h4>
+                    <a href="https://rolling-scopes-school.github.io/mrsmariya-JSFE2021Q3/momentum/#en"><img class="img_link" src="./assets/img/rolling-scopes-school.github.io_mrsmariya-JSFE2021Q3_momentum_.png" width="1157" height="615" alt="project-momentum"></a>
+                  </li>
+                  <li>
+                    <h4>Slider(HTML, CSS, JS)</h4>
+                    <a href="https://rolling-scopes-school.github.io/mrsmariya-JSFEPRESCHOOL/vertical-slider/"><img class="img_link" src="./assets/img/slider.png" width="1157" height="615" alt="project-slider"></a>
+                  </li>
+                </ul>
+               </section>
+        </main>
+        <footer>
+            <h3>Contact info:</h3>
+            <ul>
+                <li>Phone number: +375447561428</li>
+                <li>Discord: MrsMariya(MrsMariya)#5663</li>
+                <li>Email: mariyayaromchik@mail.ru</li>
+            </ul>
+                <span class="link">
+                <a href="https://rs.school/js/"><img class="img_link" src="assets/svg/rs_school_js.svg" width="60" height="60" alt="RS-logo"></a>
+                <time datetime="2023">2023 &copy;</time>
+                <a href="https://github.com/MrsMariya"><img class="img_link" src="assets/svg/github.svg" width="64" height="64" alt="github link"></a>
+                </span>
+        </footer>
+    </div>
 </body>
 </html>

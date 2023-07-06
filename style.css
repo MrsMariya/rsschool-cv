@@ -1,6 +1,14 @@
 body {
-	font-family: Arial, sans-serif;
+	font-family: Hahmlet;
 	font-size: 16px;
-	margin: 0 auto;
-	padding: 0;
+	height: 100%;
+	line-height: 1;
+	font-weight: 400;
+	font-size: 16px;
+	scroll-behavior: smooth;
 }
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+  }
