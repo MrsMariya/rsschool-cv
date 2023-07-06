@@ -1,3 +1,19 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+html,
 body {
 	font-family: Hahmlet;
 	font-size: 16px;
@@ -6,9 +22,27 @@ body {
 	font-weight: 400;
 	font-size: 16px;
 	scroll-behavior: smooth;
+	--color1: #135561;
+	--color2: #d9f3f7;
+	--colorWhite: #43d4f5;
 }
 
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
+	background-color: var(--color2);
   }
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 20px;
+  padding: 20px 10px;
+  position: relative;
+}
