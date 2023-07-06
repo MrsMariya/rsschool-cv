@@ -4,13 +4,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: inherit;
-  font-size: inherit;
+	font-weight: inherit;
+	font-size: inherit;
 }
 
 ul,
 li {
-  list-style: none;
+    list-style: none;
 }
 
 html,
@@ -38,11 +38,34 @@ body {
     margin: 0 auto;
 }
 
+
+/*header*/
+header {
+    grid-column: 2/4;
+    min-height: 40px;
+}
+
+.header {
+    background: var(--colorWhite);
+    min-height: 40px;  
+}
+
 .menu-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  font-size: 20px;
-  padding: 20px 10px;
-  position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	font-size: 14px;
+	padding: 20px 10px;
+	position: relative;
+}
+
+.menu-item {
+	text-decoration: none;
+	letter-spacing: 1px;
+    color: var(--color3);
+    transition: .5s ease color;
+}
+
+.menu-item:hover {
+    color: var(--color2);
 }
