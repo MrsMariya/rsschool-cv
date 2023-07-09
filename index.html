@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hahmlet&display=swap" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad()</script>
     <title>My CV</title>
 </head>
 <body>
@@ -124,16 +126,13 @@
                 </section>
                     <section class="sample-code" id="sample-code">
                     <h2 class="section-title">Sample code</h2>
-                    <div>
                     <pre> 
-                        <code>
-                            function mergeArrays(arr1, arr2) {
-                                return  [...new Set([...arr1,...arr2])]
-                                .sort((a, b) => a - b)
-                            }
+                        <code class="html">function mergeArrays(arr1, arr2) {
+                            return  [...new Set([...arr1,...arr2])]
+                            .sort((a, b) => a - b)
+                        }
                         </code>
                     </pre>
-                    </div>
                 </section>
                 <section class="experience" id="experience">
                     <h2 class="section-title">Experience</h2>

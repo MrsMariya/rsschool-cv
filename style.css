@@ -134,6 +134,8 @@ main {
     }
 }
 
+/*contacts*/
+
 .contacts {
     margin-top: 36px;
     font-size: 21px;
@@ -208,3 +210,24 @@ section {
     background-repeat: no-repeat;
     margin: 5px 15px;
 }
+
+/*sample code*/
+
+pre {
+    width: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+	overflow-y: hidden;
+	font-size: 16px;
+	line-height: 20px;
+	background: #efefef;
+    box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  pre code {
+    white-space: pre-wrap;
+}
+
+
