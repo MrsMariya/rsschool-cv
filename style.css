@@ -155,7 +155,7 @@ main {
 .contact_link {
     list-style-type: none;
     line-height: 35px;
-    color: #135561;
+    color: var(--color1);
     padding: 15px 5px;
     transition: .3s;
 	text-decoration: none;
@@ -226,7 +226,7 @@ pre {
     box-sizing: border-box;
   }
 
-  pre code {
+pre code {
     white-space: pre-wrap;
 }
 
