@@ -21,23 +21,25 @@ body {
 	height: 100%;
 	line-height: 1;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 20px;
 	scroll-behavior: smooth;
 	--color1: #135561;
 	--color2: #d9f3f7;
 	--color3: #43d4f5;
 	--color4: #80eae5;
+    background: var(--color2);
 }
 
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
 	background-color: var(--color2);
+    max-width: 1400px;
+    margin: 0 auto;
   }
 
 .container {
-    max-width: 1400px;
-    margin: 0 auto;
+    padding: 0 16px;
 }
 
 
@@ -162,4 +164,47 @@ main {
     align-items: center;
     max-width: 25px;
     height: 25px;
+}
+
+section {
+    padding-top: 25px;
+    max-width: 900px;
+    text-align: left;
+}
+
+.section-title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 36px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    font-weight: 600;
+    color: var(--color1);
+    text-align: center;
+    background-color: var(--color4);
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    max-width: 70px;
+    height: 35px;
+    background-color: var(--color3);
+}
+
+.education li, .experience li, .languages li{
+    display: flex;
+    align-items: center;
+}
+
+.list-icon {
+    width: 25px;
+    height: 25px;
+    background-image: url(./assets/img/free-icon-verify-8358886.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px 15px;
 }
