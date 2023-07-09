@@ -230,4 +230,22 @@ pre {
     white-space: pre-wrap;
 }
 
+/* work experiance*/
 
+.work-examples img {
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+    margin: 20px 5px;
+}
+
+.work-examples img:hover {
+    z-index: 1;
+	transition: 1s;
+    transform: scale(1.1);
+}
+
+
+.img-link {
+
+}
