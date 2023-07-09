@@ -197,7 +197,10 @@ section {
     background-color: var(--color3);
 }
 
-.education li, .experience li, .languages li{
+.education li,
+.experience li,
+.languages li,
+.skills li {
     display: flex;
     align-items: center;
 }
