@@ -1,1 +1,1 @@
-# rsschool-cv
+# https://MrsMariya.github.io/rsschool-cv/
